@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rock-Paper-Scissors</title>
+
+    <!--FONTS-->
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'> <!--font-family: 'Poiret One', cursive;-->
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+
+    <section class="header">
+      <h1>Rock, Paper, Scissors</h1>
+    </section>
+
+    <section class="main">
+      <section class="display-container">
+        <img id="pChoice" src="./img/rock.png" alt="Your choice here!" />
+        <img id="cChoice" src="#" alt="Computer choice here!" />
+      </section>
+
+      <section class="button-container">
+        <button id="shootBtn">Shoot</button>
+      </section>
+
+      <section class="pChoice-container">
+          <input id="rock" type="radio" name="pChoice" value="rock" checked><p>Rock</p></input>
+          <input id="paper" type="radio" name="pChoice" value="paper"><p>Paper</p></input>
+          <input id="scissors" type="radio" name="pChoice" value="scissors"><p>Scissors</p></input>
+      </section>
+
+      <section id="target" class="game-results">
+
+      </section>
+    </section>
+
+    <section class="footer">
+      <p>Copyright (c) 2016 Lemire Sites All Rights Reserved.</p>
+    </section>
+
+
+    <!--SCRIPTS-->
+    <script src="./script/jquery.js"></script>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

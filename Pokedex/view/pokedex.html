@@ -1,0 +1,28 @@
+<section id="poke-wrapper">
+  <div id="poke-search-container">
+    <input id="poke-input" ng-model="pokeID">
+    <button id="poke-btn" ng-click="getPokemonData(pokeID)"><p>Find pokemon!</p></button>
+  </div>
+
+  <div id="pokeImg-container">
+    <img id="poke-img" src="{{pokeImg}}" />
+  </div>
+
+  <div id="pokeInfo-container">
+    <ul>
+      <li><p>Name: {{pokeName}}</p></li>
+      <li><p>Weight: {{pokeWeight}}</p></li>
+      <li><p>Base Stats:</p></li>
+      <ul id="stat-list">
+        <li ng-repeat="i in pokeStats"><p>{{i.stat.name}}: {{i.base_stat}}</p></li>
+      </ul>
+    </ul>
+
+    <div id="other-forms-container">
+      <img src="{{otherForms.front_default}}" class="other-forms-img">
+      <img src="{{otherForms.back_default}}" class="other-forms-img">
+      <img src="{{otherForms.front_shiny}}" class="other-forms-img">
+      <img src="{{otherForms.back_shiny}}" class="other-forms-img">
+    </div>
+  </div>
+</section>

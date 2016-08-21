@@ -1,0 +1,68 @@
+/*
+  Color Palette
+    #080F0F;
+    #EA2B1F;
+    #FDFFFC;
+    #C0C5C1;
+    #01BAEF;
+*/
+
+p, h1 {
+  color: #FDFFFC;
+  font-family: 'Orbitron', cursive;
+}
+
+header {
+  height: 20vh;
+  width: 100%;
+  background: #EA2B1F;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+  #headerImg-container {
+    width: 50%;
+    height: 60%;
+  }
+
+  #headerImg {
+    width: 100%;
+    height: 100%;
+  }
+
+  #headerImg:hover {
+    cursor: pointer;
+  }
+
+  #headerNav {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .headerLink:hover {
+    cursor: pointer;
+    border-bottom: 1px solid #FDFFFC;
+  }
+
+main {
+  height: 70vh;
+  width: 100%;
+  background: #C0C5C1;
+}
+
+footer {
+  height: 10vh;
+  width: 100%;
+  background: #EA2B1F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  #footerText {
+    font-size: 12px;
+  }

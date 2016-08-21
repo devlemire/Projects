@@ -1,0 +1,136 @@
+.titleText {
+  font-size: 30px;
+  font-family: 'Orbitron', cursive;
+  color: #FDFFFC;
+}
+
+header {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #EA2B1F;
+  position: relative;
+}
+
+.mainLogo {
+  margin: 0 auto;
+  margin-top: 10px;
+  height: 50%;
+  width: 50%;
+  cursor: pointer;
+}
+
+.headerLinks {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.headerLinks p:hover {
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+
+/* --- UI-VIEW --- */
+main {
+  width: 100%;
+  height: 60vh;
+  background: #C0C5C1;
+}
+
+  /* --- HOME --- */
+    /* --- MAIN WRAPPER --- */
+    .home-wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+      /* --- HOME HEADER --- */
+      .home-header {
+        width: 90%;
+        height: 10vh;
+        background: #01BAEF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        margin-top: 20px;
+        border: 1px solid #FDFFFC;
+      }
+
+      /* --- INTRUCTIONS WRAPPER --- */
+      .instruction-wrapper {
+        width: 80%;
+        height: 75%;
+        margin-top: 10px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        letter-spacing: 2.5px;
+      }
+        /* --- INSTRUCTIONS HEADER --- */
+        .instructions-header {
+          width: 100%;
+          height: 10vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #01BAEF;
+          border: 1px solid #FDFFFC;
+          border-radius: 10px;
+        }
+
+        .instructions-header h1:hover {
+          border-bottom: 1px solid #FDFFFC;
+          cursor: pointer;
+        }
+
+        /* --- INSTRUCTIONS INFO --- */
+        .instructions-info {
+          height: 70%;
+          width: 80%;
+          background: #01BAEF;
+          margin-top: 10px;
+          border-radius: 10px;
+          border: 1px solid #FDFFFC;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+          .instructions {
+            width: 90%;
+            height: 90%;
+            overflow: auto;
+          }
+
+          .instructions p {
+            color: #FDFFFC;
+            font-family: 'Orbitron', cursive;
+            display: inline-block;
+          }
+
+  /* --- /HOME --- */
+/* --- /UI-VIEW --- */
+
+
+footer {
+  width: 100%;
+  height: 10vh;
+  background: #EA2B1F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  color: #FDFFFC;
+  font-family: 'Orbitron', cursive;
+}

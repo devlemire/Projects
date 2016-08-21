@@ -1,0 +1,27 @@
+.task-container {
+    margin-top: 30px;
+    height: auto;
+    min-height: 100px;
+    width: 337px;
+    background: #EEE9E9;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+  .task-delete-container {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .task-done-container {
+    position: absolute;
+    right: 35px;
+    top: 10px;
+  }
+
+  .task-button:hover {
+    cursor: pointer;
+  }

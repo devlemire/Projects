@@ -1,0 +1,75 @@
+/*Color Scheme: 
+	#008080 - darkest
+	#27a191
+	#69c1a9
+	#96d3c2
+	#d5ede6 - lightest
+*/
+
+body {
+	background-color: #96d3c2;
+}
+
+.header {
+	height: 175px;
+	border: 2px solid #008080;
+	background-color: #d5ede6;
+	text-align: center;
+	color: #69c1a9;
+	font-family: cursive;
+}
+
+.menu {
+	display: inline-block;	
+}
+
+.btn {
+	background-color: #008080;
+	display: inline-block;
+	margin-top: -15px;
+	margin-left: 20px;
+	border-radius: 5px;
+	color: white;
+	padding-left: 25px;
+	padding-right: 25px;
+	text-align: center;		
+}
+
+.btn:hover {
+	cursor: pointer;
+	background-color: #69c1a9;
+	color: black;
+}
+
+/*Container for the div holding all my websites*/
+.work {
+	height: 900px;
+	margin-top: 30px;
+	background-color: #d5ede6;
+	border: 2px solid #008080;
+}
+
+/*Div holding all my websites*/
+.listWork {
+	margin-top: 5px;
+	margin-left: 5px;
+	/*height: 395px;*/
+	display: inline-block;
+}
+
+/*Small picturebox to preview said website*/
+.previewWork {
+	height: 300px;
+	width: 500px;
+	border: 2px solid #008080;
+}
+
+.workLeft {
+	float: left;
+	width: calc(50% - 5px);
+}
+
+.workRight {
+	float: right;
+	width: calc(50% - 5px);
+}

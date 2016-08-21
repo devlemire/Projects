@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+	<head>
+		<base href="/">
+		<!--TITLE-->
+		<title>Login</title>
+
+		<!--METAS-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+
+		<!--STYLES-->
+		<link rel="stylesheet" href="./style/reset.css" />
+		<link rel="stylesheet" href="./style/index.css" />
+	</head>
+
+	<body ng-controller='ctrl'>
+
+		<!--We are using ui-view for different pages-->
+		<ui-view></ui-view>
+
+		<!--You need angular and satellizer or it will not work. Don't forget to npm install or bower install Satellizer on your FRONT end not the BACK end-->
+		<!--FRAMEWORK-->
+		<script src="./script/angular.js"></script>
+    <!--LIBRARY-->
+    <script src="./bower_components/satellizer/dist/satellizer.js"></script>
+		<script src="./script/ui-router.js"></script>
+		<!--ANGULAR APP-->
+		<script src="./app/app.js"></script>
+		<!--ANGULAR CONTROLLER | SERVICE | DIRECTIVE-->
+		<script src="./app/controller/ctrl.js"></script>
+	</body>
+</html>

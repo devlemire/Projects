@@ -1,0 +1,11 @@
+<section class="task-container">
+  <section class='task-done-container'>
+    <i class="fa fa-check task-button" aria-hidden="true"></i>
+  </section>
+  <section class="task-delete-container task-button">
+    <i ng-click="deleteTask(data)" class="fa fa-trash task-button" aria-hidden="true"></i>
+  </section>
+  <p priority data="data.priority" class="text-dec task-title">{{data.title}}</p>
+  <p class="text-dec">{{data.description}}</p>
+  <p class="text-dec">{{data.deadline}}</p>
+</section>

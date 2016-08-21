@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--TITLE-->
+    <title>Tic-Tac-Toe</title>
+
+    <!--METAS-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <!--FONTS-->
+    <link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'> <!--font-family: 'Share Tech Mono', cursive;-->
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+
+    <section class="header">
+      <h1>Tic - Tac - Toe</h1>
+    </section>
+
+    <section class="game-area">
+      <section class="choose">
+        <input id="playerChoiceX" name="pChoice" type="radio" checked="checked">X</input>
+        <input id="playerChoiceO" name="pChoice" type="radio">O</input>
+      </section>
+
+      <section class="game">
+        <div class="game-board-wrapper">
+          <div id="right-horizontal" class="divider-horizontal"></div>
+          <div id="left-horizontal" class="divider-horizontal"></div>
+
+          <div id="top-left" class="quadrant"><img class='0' id="top-left-image" src="" alt="X or O" /></div>
+          <div id="top-middle" class="quadrant"><img class='1' id="top-middle-image" src="" alt="X or O" /></div>
+          <div id="top-right" class="quadrant"><img class='2' id="top-right-image" src="" alt="X or O" /></div>
+
+          <div id="top-vertical" class="divider-vertical"></div>
+
+          <div id="middle-left" class="quadrant"><img class='3' id="middle-left-image" src="" alt="X or O" /></div>
+          <div id="middle-middle" class="quadrant"><img class='4' id="middle-middle-image" src="" alt="X or O" /></div>
+          <div id="middle-right" class="quadrant"><img class='5' id="middle-right-image" src="" alt="X or O" /></div>
+
+          <div id="bottom-vertical" class="divider-vertical"></div>
+
+          <div id="bottom-left" class="quadrant"><img class='6' id="bottom-left-image" src="" alt="X or O" /></div>
+          <div id="bottom-middle" class="quadrant"><img class='7' id="bottom-middle-image" src="" alt="X or O" /></div>
+          <div id="bottom-right" class="quadrant"><img class='8' id="bottom-right-image" src="" alt="X or O" /></div>
+        </div>
+      </section>
+    </section>
+
+    <section class="footer">
+      <p>Copyright (c) 2016 <br>Lemire Sites All Rights Reserved.</p>
+    </section>
+
+    <!--SCRIPTS-->
+    <script src="./script/jquery.js"></script>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

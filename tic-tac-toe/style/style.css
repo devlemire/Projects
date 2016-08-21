@@ -1,0 +1,151 @@
+body {
+  background-color: #F0F0F0;
+  font-family: 'Share Tech Mono', cursive;
+}
+
+.header {
+  width: 100%;
+  height: 15vh;
+  background: #444444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+  color: #F0F0F0;
+  font-size: 20px;
+}
+
+.game-area {
+  width: 100%;
+  height: 70vh;
+}
+
+.choose {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.choose input {
+  height: 15px;
+  width: 15px;
+}
+
+.game {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-board-wrapper {
+  height: 388px;
+  width: 362px;
+  display: inline-block;
+  position: relative;
+}
+
+.quadrant {
+  width: 32%;
+  height: 32%;
+  border: 1px solid #12F3F7;
+  position: absolute;
+}
+
+.quadrant img {
+  height: 100%;
+  width: 100%;
+}
+
+.divider-horizontal {
+  height: 100%;
+  width: 5px;
+  background: #444444;
+  position: absolute;
+}
+
+.divider-vertical {
+  width: 100%;
+  height: 5px;
+  background: #444444;
+  position: absolute;
+}
+
+#left-horizontal {
+  left: 32%;
+}
+
+#top-middle {
+  left: calc(32% + 5px);
+}
+
+#right-horizontal {
+  left: calc(64% + 5px);
+}
+
+#top-right {
+  left: calc(64% + 10px);
+}
+
+#top-vertical {
+  top: 32%;
+}
+
+#middle-left {
+  top: calc(32% + 5px);
+}
+
+#middle-middle {
+  top: calc(32% + 5px);
+  left: calc(32% + 5px);
+}
+
+#middle-right {
+  top: calc(32% + 5px);
+  left: calc(64% + 10px);
+}
+
+#bottom-vertical {
+  top: calc(64% + 5px);
+}
+
+#bottom-left {
+  top: calc(64% + 10px);
+}
+
+#bottom-middle {
+  top: calc(64% + 10px);
+  left: calc(32% + 5px);
+}
+
+#bottom-right {
+  top: calc(64% + 10px);
+  left: calc(64% + 10px);
+}
+
+.footer {
+  width: 100%;
+  height: 15vh;
+  background: #444444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 15px;
+  color: #F0F0F0;
+}
+
+@media(max-height: 603px) {
+  .game-area {
+    height: 500px;
+  }
+}

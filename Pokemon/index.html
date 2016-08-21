@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="pokeApp">
+	<head>
+	<!--TITLE-->
+	<title>Pokemon</title>
+
+	<!--METAS-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+
+	<!--FONTS-->
+	<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+	<!--font-family: 'Orbitron', sans-serif;-->
+
+	<!--STYLES-->
+	<link rel="stylesheet" href="./style/reset.css" />
+	<link rel="stylesheet" href="./style/style.css" />
+	</head>
+
+	<body>
+
+		<!--HEADER-->
+		<header>
+			<!--HEADER LOGO-->
+			<img ui-sref="home" class="mainLogo" src="./img/mainLogo.png" />
+
+			<!--Links-->
+			<div class="headerLinks">
+				<p id="play" class="titleText">Play</p>
+				<p ui-sref="pokedex" id="pokedex" class="titleText">Pokedex</p>
+			</div>
+		</header>
+		<!--/HEADER-->
+
+		<!--MAIN-->
+		<main>
+			<ui-view></ui-view>
+		</main>
+		<!--/MAIN-->
+
+		<!--FOOTER-->
+		<footer>
+			<p>Copyright (c) 2016 Lemire Sites All Rights Reserved.</p>
+		</footer>
+		<!--/FOOTER-->
+
+	<!--FRAMEWORK-->
+	<script src="./script/angular.js"></script>
+	<!--LIBRARY-->
+	<script src="./script/ui-router.js"></script>
+	<script src="./script/jquery.js"></script>
+	<script src="./script/typed.js"></script>
+	<!--ANGULAR APP-->
+	<script src="./app/app.js"></script>
+	<!--ANGULAR CONTROLLER | SERVICE-->
+	<script src="./app/controller/mainCtrl.js"></script>
+	<script src="./app/service/mainSrvc.js"></script>
+	<!--SCRIPT-->
+	<script src="./app/directive/animations.js"></script>
+	</body>
+</html>

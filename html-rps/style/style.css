@@ -1,0 +1,219 @@
+body {
+  background: #D8D8D8;
+}
+
+.header {
+  width: 100%;
+  height: 15vh;
+  background: #444444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+  color: white;
+  font-size: 30px;
+  font-family: 'Poiret One', cursive;
+}
+
+.main {
+  width: 100%;
+  height: 70vh;
+}
+
+.display-container {
+  height: 25vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.display-container img {
+  height: 100px;
+  width: 100px;
+}
+
+.button-container {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container button {
+    height: 50px;
+    width: 80%;
+    background-color: #444444;
+    color: white;
+    border: none;
+    font-size: 30px;
+    font-family: 'Poiret One', cursive;
+}
+
+.pChoice-container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pChoice-container input {
+  width: 13px;
+  height: 13px;
+}
+
+.pChoice-container p {
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.game-results {
+  width: 100%;
+  height: 39%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-results p {
+  font-family: 'Poiret One', cursive;
+  color: #444444;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer {
+  width: 100%;
+  height: 15vh;
+  background: #444444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 14px;
+}
+
+
+/*MOBILE PROTRAIT*/
+@media(min-width: 200px) and (min-height: 400px) {
+  .display-container {
+    height: 50%;
+  }
+
+  .display-container img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .button-container button {
+    height: 50px;
+    font-size: 30px;
+  }
+
+  .game-results {
+    height: 10vh;
+  }
+}
+
+/*MOBILE LANDSCAPE*/
+@media(min-width: 450px) and (min-height: 1px) {
+
+  .display-container {
+    height: 40%;
+  }
+
+  .button-container {
+    height: 20%;
+  }
+
+  .pChoice-container {
+    height: 20%;
+  }
+
+  .game-results {
+    height: 20%;
+  }
+
+  #pChoice {
+    height: 100px;
+    width: 100px;
+  }
+
+  #cChoice {
+    height: 100px;
+    width: 100px;
+  }
+
+  #shootBtn {
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .button-container {
+    height: 45px;
+  }
+
+  .pChoice-container p {
+    font-size: 15px;
+  }
+
+  .pChoice-container input {
+    height: 10px
+    width: 10px
+  }
+
+  #target {
+    height: 50px;
+  }
+}
+
+/*DESKTOP*/
+@media(min-width: 700px) and (min-height: 500px) {
+  .display-container {
+    height: 50%;
+  }
+
+  #pChoice {
+    height: 200px;
+    width: 200px;
+  }
+
+  #cChoice {
+    height: 200px;
+    width: 200px;
+  }
+
+  #shootBtn {
+    height: 50px;
+    font-size: 30px;
+  }
+
+  .button-container {
+    height: 60px;
+  }
+
+  .pChoice-container input {
+    height: 20px;
+    width: 20px;
+  }
+
+  .pChoice-container p {
+    font-size: 20px;
+  }
+
+  .footer p {
+    font-size: 20px;
+  }
+
+  .game-results p {
+    font-size: 30px;
+  }
+}

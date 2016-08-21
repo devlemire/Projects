@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+	<head>
+		<title>CSS Practice</title>
+		<link type="text/css" rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+
+		<div id="header">
+			<h1>CSS Practice</h1>
+		</div>
+
+		<div id="main-container">
+			<div class="container">
+				<p id="item1">Change me to whatever you want</p>
+				<input type="text" id="input1" />
+				<button class="changeBtn" id="1">Change</button>
+			</div>
+
+			<div class="container">
+				<p id="item2">Change me to whatever you want</p>
+				<input type="text" id="input2" />
+				<button class="changeBtn" id="2">Change</button>
+			</div>
+
+			<div class="newContainer">
+				<p id="item3">Change me to whatever you want</p>
+				<input type="text" id="input3" />
+				<button class="changeBtn" id="3">Change</button>
+			</div>
+		</div>
+
+
+		<script src="jquery.js"></script>
+
+		<script>
+			$('.changeBtn').on('click', function() {
+
+				var $inputID = $(this).attr('id');
+				var $inputThis = $('#input'+$inputID).val();
+
+				$('#item'+$inputID).html("<p>" + $inputThis + "</p>");
+
+			});
+		</script>
+	</body>
+</html>
