@@ -91,17 +91,17 @@ angular
       // console.log("ATTEMPING TO ORDER TASKS");
       var temp = [];
       for(var i in r.data) {
-        if(r.data[i].priority == 2) {
+        if(r.data[i].priority == 'High') {
           temp.push(r.data[i]);
         }
       }
       for(var j in r.data) {
-        if(r.data[j].priority == 1) {
+        if(r.data[j].priority == 'Medium') {
           temp.push(r.data[j]);
         }
       }
       for(var k in r.data) {
-        if(r.data[k].priority == 0) {
+        if(r.data[k].priority == 'Low') {
           temp.push(r.data[k]);
         }
       }
@@ -110,6 +110,7 @@ angular
 
     $scope.addTask = function(data) {
       data.project_id = $scope.details.id;
+      console.log('ADDING TASK', data);
       projectsSrvc.addTask(data).then(function(r) {
         console.log('UPDATED TASKS', r.data);
         $scope.tasks = $scope.orderTasks(r);
@@ -150,6 +151,10 @@ angular
       } else {
         $scope.firstTask = false;
       }
+    });
+
+    $rootScope.$on('addCompleted', function(event, task) {
+      console.log('triggered');
     });
     // --- Event Listeners ---
   });

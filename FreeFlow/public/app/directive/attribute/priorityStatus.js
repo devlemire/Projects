@@ -1,6 +1,6 @@
 angular
   .module('app')
-  .directive('priority', function() {
+  .directive('priorityStatus', function() {
 
     return {
       restrict: 'A',
@@ -15,7 +15,7 @@ angular
         } else if(scope.data === 'Low') {
           scope.color = 'green';
         }
-        ele.css('color', scope.color);
+        ele.css('background', scope.color);
       }
     };
 
