@@ -41,6 +41,7 @@
       </section>
 
       <p ng-show="firstTask" id="no-tasks-info" class="text-dec">You currently do not have any tasks.<br>Click the plus icon at the bottom to get started.</p>
+      <p ng-show="!firstTask" id="in-progress-title" class="text-dec">In Progress</p>
       <task-card ng-repeat="i in tasks" data="i"></task-card>
     </div>
   </div>
