@@ -20,6 +20,8 @@ angular
 
 
     // --- View Handling ---
+    $scope.noMessages = true;
+
     $scope.showCreation = function() {
       if($scope.detailedView) {
         ngDialog.open({template: './view/addTaskTmpl.html', className: 'ngdialog-theme-default', scope: $scope});
