@@ -144,7 +144,9 @@ angular
       });
       projectsSrvc.getCompletedTasks(data.id).then(function(r) {
         $scope.completed = r.data;
-        console.log('COMPLETED TASKS ARRAY', $scope.completed);
+        if(r.data.length !== 0) {
+          $scope.firstTask = false;
+        }
       });
     });
 
@@ -173,6 +175,9 @@ angular
       projectsSrvc.deleteCompletedTask(task).then(function(r) {
         console.log(r);
         $scope.completed = r.data;
+        if(r.data.length === 0) {
+          $scope.firstTask = true;
+        }
       });
     });
     // --- Event Listeners ---

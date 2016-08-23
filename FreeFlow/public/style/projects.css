@@ -5,7 +5,8 @@
 
   #projects-header-wrapper {
     width: 100%;
-    height: 60px;
+    min-height: 60px;
+    height: 10vh;
     display: flex;
     background: #EEE9E9;
     border: 1px solid black;
@@ -23,6 +24,10 @@
         margin-left: 10px
       }
 
+      #projects-title:hover {
+        cursor: pointer;
+      }
+
     #projects-nav-container {
       width: 50%;
       height: 100%;
@@ -34,6 +39,7 @@
       #projects-nav-list {
         position: absolute;
         right: 20px;
+        height: 14px;
       }
 
       #projects-nav-list li {
@@ -57,8 +63,8 @@
     border-left: 1px solid black;
     border-right: 1px solid black;
     width: 100%;
-    min-height: 547px;
-    height: 81.5vh;
+    min-height: 454px;
+    height: 80vh;
     overflow: auto;
     background: #AAB9CF;
     /*background-image: url('../img/desk.jpg');
@@ -69,9 +75,9 @@
     #project-cards-container {
       width: 100%;
       height: 100%;
-      /*display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;*/
+      display: flex;
+      align-items: center;
+      flex-direction: column;
     }
 
     #projects-first-time-user-wrapper {
@@ -179,7 +185,8 @@
 #projects-footer-container {
   border: 1px solid black;
   width: 100%;
-  height: 60px;
+  min-height: 60px;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,3 +200,65 @@
     #add-project-btn {
       font-size: 50px;
     }
+
+/*ELEMENTS TO HIDE ON MOBILE*/
+#project-cards-header-container {
+  display: none;
+}
+
+#project-create-bar {
+  display: none;
+}
+
+
+/*TRANSFORM SITE TO DESKTOP VERSION*/
+@media(min-width: 1025px) {
+  #projects-header-wrapper {
+    border: none;
+    width: 100%;
+    min-height: 47.8px;
+    height: 5vh;
+    display: flex;
+    background: #FFFFFF;
+  }
+
+  #projects-main-content-wrapper {
+    border: none;
+    width: 100%;
+    min-height: 95vh;
+    height: auto;
+    overflow: auto;
+    background: #E8E8E8;
+  }
+
+    #project-cards-container {
+      width: 100%;
+      height: auto;
+      min-height: 95vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+      #project-cards-header-container {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #project-create-bar {
+        display: inline-block;
+        width: 55%;
+        max-width: 669px;
+        height: 15px;
+        background: #FAFAFA;
+      }
+
+
+  #projects-footer-container {
+    display: none;
+  }
+}
