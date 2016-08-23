@@ -62,4 +62,11 @@ angular
         data: task
       });
     };
+
+    this.deleteCompletedTask = function(task) {
+      return $http({
+        method: 'DELETE',
+        url: 'http://localhost:3000/api/completed/' + task.id + '/' + task.project_id,
+      });
+    };
   });

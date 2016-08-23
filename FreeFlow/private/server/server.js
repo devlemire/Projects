@@ -45,6 +45,7 @@ app.delete('/api/task/:taskId/:projectId', projectsCtrl.deleteTask);
 //Completed tasks endpoints
 app.get('/api/completed/:projectId', projectsCtrl.getCompletedTasks);
 app.post('/api/completed', projectsCtrl.addCompletedTask);
+app.delete('/api/completed/:taskId/:projectId', projectsCtrl.deleteCompletedTask);
 
 //Sub-Task endpoints
 

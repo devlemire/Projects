@@ -169,8 +169,11 @@ angular
     });
 
     $rootScope.$on('completeDelete', function(event, task) {
-      console.log('DELETE COMPLETED TRIGGERED', task);
-
+      // console.log('DELETE COMPLETED TRIGGERED', task);
+      projectsSrvc.deleteCompletedTask(task).then(function(r) {
+        console.log(r);
+        $scope.completed = r.data;
+      });
     });
     // --- Event Listeners ---
   });

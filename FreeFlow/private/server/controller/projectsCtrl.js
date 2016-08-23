@@ -81,5 +81,15 @@ module.exports = {
         });
       });
     });
+  },
+  deleteCompletedTask: function(req, res) {
+    console.log('INCOMING DELETE COMPLETED TASK - TASK', req.params.taskId, 'PROJECT -', req.params.projectId);
+    console.log('REQ BODY', req.body);
+    db.queries.completed.delete([req.params.taskId], function(err, r) {
+      db.queries.completed.getAll([req.params.projectId], function(err, r) {
+        console.log('UPDATED COMPLETED TASKS LIST', r);
+        res.json(r);
+      });
+    });
   }
 };
