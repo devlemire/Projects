@@ -40,11 +40,19 @@
     width: 100%;
   }
 
+  #task-main-title-container {
+    margin-left: 5px;
+    width: calc(100% - 10px);
+    height: 28px;
+    text-overflow: ellipsis;
+  }
+
   #task-main-title {
     font-size: 27px;
     font-weight: bold;
     margin-top: 55px;
     text-align: center;
+    text-overflow: ellipsis;
   }
 
   #task-main-description-container {

@@ -1,0 +1,17 @@
+.completed-card-container {
+  width: 337px;
+  height: 60px;
+  background: #EEE9E9;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+  #completed-title {
+    margin-left: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 17px;
+    text-align: center;
+  }

@@ -46,6 +46,7 @@
       <p ng-show="!firstTask" id="detailed-in-progress-title" class="text-dec">In Progress</p>
       <task-card ng-repeat="i in tasks" data="i"></task-card>
       <p ng-show="!firstTask" id="detailed-completed-title" class="text-dec">Completed</p>
+      <completed-card ng-show="!firstTask" ng-repeat="j in completed" data="j"></completed-card>
     </div>
   </div>
 

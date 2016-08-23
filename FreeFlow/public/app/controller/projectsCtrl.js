@@ -142,6 +142,10 @@ angular
           $scope.tasks = $scope.orderTasks(r);
         }
       });
+      projectsSrvc.getCompletedTasks(data.id).then(function(r) {
+        $scope.completed = r.data;
+        console.log('COMPLETED TASKS ARRAY', $scope.completed);
+      });
     });
 
     $rootScope.$on('taskDeletion', function(event, data) {
@@ -154,7 +158,19 @@ angular
     });
 
     $rootScope.$on('addCompleted', function(event, task) {
-      console.log('triggered');
+      console.log('ADD COMPLETED TRIGGERED', task);
+      var data = {project_id: task.project_id, title: task.title, task_id: task.id};
+      projectsSrvc.addCompleted(data).then(function(r) {
+        console.log(r);
+        // $scope.projects = $scope.orderTasks({data: r.data.tasks});
+        $scope.tasks = r.data.tasks;
+        $scope.completed = r.data.completed;
+      });
+    });
+
+    $rootScope.$on('completeDelete', function(event, task) {
+      console.log('DELETE COMPLETED TRIGGERED', task);
+
     });
     // --- Event Listeners ---
   });
