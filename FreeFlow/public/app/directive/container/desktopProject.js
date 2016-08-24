@@ -5,6 +5,7 @@ angular
     return {
       restrict: 'E',
       templateUrl: './view/desktopProjectTmpl.html',
+      controller: 'projectCardCtrl',
       scope: {
         data: '='
       }

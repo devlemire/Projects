@@ -244,6 +244,7 @@
     font-size: 15px;
     position: absolute;
     right: 90px;
+    border-radius: 5px;
   }
 
   #project-create-bar:hover {
@@ -296,6 +297,7 @@
     overflow: auto;
     justify-content: center;
     align-items: center;
+    overflow: auto
   }
 
     .project-desktop-category-container {
