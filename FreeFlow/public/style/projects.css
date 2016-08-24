@@ -253,8 +253,9 @@
         display: inline-block;
         width: 55%;
         max-width: 669px;
-        height: 15px;
+        height: 30px;
         background: #FAFAFA;
+        border: none;
       }
 
 
