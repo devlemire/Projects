@@ -62,7 +62,7 @@ datepicker, .datepicker, [datepicker],
   line-height: 40px;
 }
 ._720kb-datepicker-calendar-header:nth-child(odd) {
-  background: #138EFA;
+  background: #FD8401;
 }
 ._720kb-datepicker-calendar-header:nth-child(even) {
   background: #7BC6FC;

@@ -1,0 +1,32 @@
+.project-desktop-item {
+  display: inline-block;
+  width: calc(100% - 20px);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.project-desktop-item p {
+  display: inline-block;
+}
+
+  #project-desktop-title:hover {
+    cursor: pointer;
+  }
+
+  #project-desktop-description {
+    font-style: italic;
+  }
+
+  #project-desktop-description:hover {
+    cursor: default;
+  }
+
+  #project-desktop-delete-button {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  #project-desktop-delete-button:hover {
+    cursor: pointer;
+  }

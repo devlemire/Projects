@@ -1,17 +1,17 @@
 <div id="projects-main-wrapper">
 
   <div id="projects-header-wrapper">
-    <section id="projects-title-container">
-      <h1 id="projects-title" class="header-title" ui-sref="projects">Free Flow</h1>
-    </section>
-
-    <section id="projects-nav-container">
-      <ul id="projects-nav-list">
-        <!-- <li ng-show="noMessages" class="nav-messages"><i class="fa fa-envelope-o" aria-hidden="true"></i></li>
-        <li id="test" ng-show="!noMessages" class="nav-messages"><i class="fa fa-envelope" aria-hidden="true"></i></li> -->
-        <li class="text-dec" ng-click="logOut()">Log Out</li>
-      </ul>
-    </section>
+    <h1 id="projects-title" class="header-title" ui-sref="projects">Free Flow</h1>
+    <!-- <div id="project-desktop-search-icon">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </div>
+    <input class="text-dec" id="project-desktop-search-bar" type="text" placeholder="Find.." /> -->
+    <button ng-click="showCreation()" type="text" id="project-desktop-create-button">Create Project..</button>
+    <ul id="projects-nav-list">
+      <!-- <li ng-show="noMessages" class="nav-messages"><i class="fa fa-envelope-o" aria-hidden="true"></i></li>
+      <li id="test" ng-show="!noMessages" class="nav-messages"><i class="fa fa-envelope" aria-hidden="true"></i></li> -->
+      <li class="text-dec" ng-click="logOut()">Log Out</li>
+    </ul>
   </div>
 
   <div id="projects-main-content-wrapper">
@@ -21,10 +21,34 @@
       </section>
     </div>
 
-    <section id="project-cards-container" ng-show="!firstTimeUser && !detailedView">
-      <section id="project-cards-header-container">
-        <button class="ng-dialog-btn" type="text" id="project-create-bar">Create Project..</button>
+    <section id="project-desktop-container">
+      <section id="project-desktop-main-container">
+
+        <section class="project-desktop-category-container">
+          <section class="project-desktop-header-container">
+            <p id="project-desktop-projects-container-header" class="text-dec">My Projects</p>
+          </section>
+
+          <section class="project-desktop-main-container">
+            <!-- <desktop-project ng-repeat="i in projects" data="i"></desktop-project> -->
+          </section>
+        </section>
+
+        <!-- <section class="project-desktop-category-container">
+          <section class="project-desktop-header-container">
+            <p id="project-desktop-projects-container-header" class="text-dec">Completed</p>
+          </section>
+
+          <section class="project-desktop-main-container">
+            <desktop-project ng-repeat="i in projects" data="i"></desktop-project>
+          </section>
+        </section> -->
       </section>
+    </section>
+
+
+
+    <section id="project-cards-container"  ng-show="!firstTimeUser && !detailedView">
       <project-card projects-animations class="project-card-animation" ng-repeat="i in projects" data="i"></project-card>
     </section>
 

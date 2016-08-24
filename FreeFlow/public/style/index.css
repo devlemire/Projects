@@ -27,7 +27,7 @@ html {
 .ng-dialog-btn {
   width: 100px;
   height: 30px;
-  background: black;
+  background: #FD8401;
   font-size: 15px;
   border-radius: 5px;
   border: none;
@@ -37,7 +37,6 @@ html {
 
 .ng-dialog-btn:hover {
   cursor: pointer;
-  outline: #F5CB5C solid 4px;
 }
 
 .hidden {
