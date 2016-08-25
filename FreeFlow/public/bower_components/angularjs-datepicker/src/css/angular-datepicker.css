@@ -12,7 +12,7 @@ datepicker select, datepicker select:focus, datepicker select:hover,
    overflow: hidden;
    background:none;
    color:#fff;
-   background-color: #138EFA;
+   background-color: #FD8401;
    border-radius:2px;
    border: 0;
    margin-top:5px;
@@ -65,7 +65,7 @@ datepicker, .datepicker, [datepicker],
   background: #FD8401;
 }
 ._720kb-datepicker-calendar-header:nth-child(even) {
-  background: #7BC6FC;
+  background: #FD8401;
 }
 ._720kb-datepicker-calendar-header-left,
 ._720kb-datepicker-calendar-header-middle,
