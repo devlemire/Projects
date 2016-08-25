@@ -18,4 +18,8 @@ angular
     $scope.test = function() {
       console.log($scope.search);
     };
+
+    $scope.checkout = function() {
+      console.log("CHECKOUT FIRED");
+    };
   });

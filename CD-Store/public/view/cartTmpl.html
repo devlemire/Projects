@@ -10,7 +10,8 @@
 
     <div id="cart-footer-container">
       <p class="text-dec">Total: ${{total}}</p>
-      <button id="checkout-btn"><p class="text-dec">Checkout</p></button>
+      <!-- <button ng-click="checkout()" id="checkout-btn"><p class="text-dec">Checkout</p></button> -->
+      <stripe-payment price="total"></stripe-payment>
     </div>
   </section>
 </div>
