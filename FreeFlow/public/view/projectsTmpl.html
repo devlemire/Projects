@@ -21,7 +21,8 @@
       </section>
     </div>
 
-    <section id="project-desktop-container">
+    <!-- DESKTOP VERISON - DISPLAY PROJECTS -->
+    <section id="project-desktop-container" ng-show="!firstTimeUser && !detailedView">
       <section id="project-desktop-main-container">
 
         <section class="project-desktop-category-container">
@@ -45,14 +46,38 @@
         </section> -->
       </section>
     </section>
+    <!-- DESKTOP VERISON - DISPLAY PROJECTS -->
 
-
-
+    <!-- MOBILE VERISON - DISPLAY PROJECTS -->
     <section id="project-cards-container"  ng-show="!firstTimeUser && !detailedView">
       <project-card projects-animations class="project-card-animation" ng-repeat="i in projects" data="i"></project-card>
     </section>
+    <!-- MOBILE VERISON - DISPLAY PROJECTS -->
 
+    <!-- MOBILE VERSION - DISPLAY TASKS -->
     <div id="project-detailed-wrapper" ng-show="!firstTimeUser && detailedView">
+
+      <!-- DESKTOP VERISON - DISPLAY TASKS -->
+      <section id="project-detailed-desktop-container">
+        <section id="project-detailed-desktop-header-container">
+          <section id="project-detailed-desktop-close-container">
+            <i class="fa fa-reply" ng-click="closeDetailedView()"></i>
+          </section>
+          <p id="project-desktop-projects-container-header" class="text-dec">{{details.name}}</p>
+        </section>
+
+        <section id="project-detailed-desktop-main-container">
+          <p id="project-detailed-desktop-description-text" class="text-dec orange-header">Description</p>
+          <p class="text-dec project-detailed-desktop-text">{{details.description}}</p>
+          <p class="text-dec orange-header">Client</p>
+          <p class="text-dec project-detailed-desktop-text">{{details.client_first_name}} {{details.client_last_name}}</p>
+          <p class="text-dec project-detailed-desktop-text">{{details.client_email}}</p>
+          <p class="text-dec orange-header">Deadline</p>
+          <p class="text-dec project-detailed-desktop-text">{{details.deadline}}</p>
+        </section>
+      </section>
+      <!-- DESKTOP VERSION - DISPLAY TASKS -->
+
       <section id="project-detailed-container">
         <section id="project-detailed-close-container">
           <i class="fa fa-reply" ng-click="closeDetailedView()"></i>
@@ -76,6 +101,7 @@
       <completed-card ng-show="!firstTask" ng-repeat="j in completed" data="j"></completed-card>
     </div>
   </div>
+  <!--MOBILE VERSION - DISPLAY TASKS -->
 
   <div ng-click="showCreation()" id="projects-footer-container">
     <p id="add-project-btn" class="text-dec">+</p>

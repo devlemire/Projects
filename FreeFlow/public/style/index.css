@@ -42,3 +42,16 @@ html {
 .hidden {
   display: none;
 }
+
+.orange-header {
+  font-size: 20px;
+  color: #FD8401;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.project-detailed-desktop-text {
+  margin-top: 5px;
+  margin-left: 10px;
+}
