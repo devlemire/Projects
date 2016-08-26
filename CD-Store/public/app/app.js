@@ -20,14 +20,15 @@ angular
         templateUrl: './view/cartTmpl.html',
         controller: 'ctrl'
       })
-      .state('checkout', {
-        url: '/checkout',
-        templateUrl: './view/checkoutTmpl.html'
-      })
       .state('albumView', {
         url: '/album-view/:id',
         templateUrl: "./view/albumViewTmpl.html",
         controller: 'albumViewCtrl'
+      })
+      .state('paid', {
+        url: '/paid',
+        templateUrl: './view/downloadTmpl.html',
+        controller: 'paidCtrl'
       });
 
       $urlRouterProvider.otherwise('/');
