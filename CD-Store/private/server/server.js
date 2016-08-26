@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var config = require('./config/config.js');
 var stripe = require('stripe')(config.stripePublic);
 var nodemailer = require('nodemailer');
+var transporter = nodemailer.createTransport('smtps://richardmurreystore%40gmail.com:'+config.gmailPass+'@smtp.gmail.com');
 var app = express();
 
 app.use(cors(config.corsOptions));
@@ -29,6 +30,31 @@ app.post('/api/charge', function(req,res) {
      res.status(200).send(charge);
    }
  });
+});
+
+app.post('/api/email', function(req, res) {
+  // setup e-mail data with unicode symbols
+  var email = req.body.email;
+  var links = [];
+  for(var i in req.body.songs) {
+    links.push(req.body.songs[i].download);
+  }
+
+  var mailOptions = {
+      from: '"MurreyTunes" <richardmurreytunes@gmail.com>', // sender address
+      to: email, // list of receivers
+      subject: 'Your new music from MurreyTunes', // Subject line
+      text: 'Thanks for shopping with us over at MurreyTunes. Check out the file attachments for your new music. Enjoy!',
+      attachments: links
+  };
+
+  // send mail with defined transport object
+  transporter.sendMail(mailOptions, function(error, info){
+      if(error){
+        return console.log(error);
+      }
+      console.log('Message sent: ' + info.response);
+  });
 });
 
 app.listen(config.port, function() { console.log("Server initiated on port", config.port); });
