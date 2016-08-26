@@ -1,8 +1,11 @@
-#download-links-container {
-  width: auto;
-  height: auto;
+#download-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+/*
 #download-links-container a {
   display: inline-block;
   text-decoration: none;
@@ -10,12 +13,12 @@
 
 #download-links-container p {
   display: inline-block;
-}
+}*/
 
-#download-warning {
+/*#download-warning {
   margin-top: 10px;
   display: inline-block;
-}
+}*/
 
 #download-item {
   width: auto;
