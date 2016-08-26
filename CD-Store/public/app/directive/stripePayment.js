@@ -7,6 +7,9 @@ angular.module('app')
       scope: {
         price: '='
       },
+      controller: function($scope, stripeSrvc) {
+        
+      },
       link: function(scope, ele, attr) {
         var handler = StripeCheckout.configure({
           key: 'pk_test_u5uUJKPD56K1E4dkEVIAeotQ',
@@ -16,14 +19,14 @@ angular.module('app')
             //You can access the token ID with 'token.id'
             //Get the token ID to your server-side code for use
             console.log("SUCCESSFUL TRANSACTION:", {token: token});
+
           }
         });
 
         $('#checkout-btn').on('click', function(e) {
           handler.open({
             name: 'Stripe Demo',
-            description: 'This is just a demo',
-            amount: scope.price
+            description: 'This is just a demo'
           });
           e.preventDefault();
         });
