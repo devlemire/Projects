@@ -9,12 +9,14 @@ angular
       {
         album: "Bill & Rose",
         song: "50 Years Growing",
-        preview: fileLocations.PREVIEW_LOCATION_billAndRose + "pre-50-years-growing.mp3"
+        preview: fileLocations.PREVIEW_LOCATION_billAndRose + "pre-50-years-growing.mp3",
+        download: fileLocations.DOWNLOAD_LOCATION_billAndRose + "50-years-growing.mp3"
       },
       {
         album: "Bill & Rose",
         song: "Forever",
-        preview: fileLocations.PREVIEW_LOCATION_billAndRose + "pre-forever.mp3"
+        preview: fileLocations.PREVIEW_LOCATION_billAndRose + "pre-forever.mp3",
+        download: fileLocations.DOWNLOAD_LOCATION_billAndRose + "forever.mp3"
       },
       {
         album: "Bill & Rose",
