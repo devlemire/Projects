@@ -1,0 +1,81 @@
+#download-links-container {
+  width: auto;
+  height: auto;
+}
+
+#download-links-container a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+#download-links-container p {
+  display: inline-block;
+}
+
+#download-warning {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+#download-item {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#download-view-container {
+  width: 90%;
+  height: 90%;
+  background: #212227;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#email {
+  color: black;
+  margin-top: 10px;
+  width: 500px;
+  font-size: 20px;
+}
+
+#confirm-email {
+  color: black;
+  margin-top: 10px;
+  width: 500px;
+  font-size: 20px
+}
+
+#email-btn {
+  margin-top: 10px;
+  width: 100px;
+  height: 20px;
+  background: #637074;
+  border-radius: 5px;
+  border: none;
+}
+
+#email-match {Tha
+  margin-top: 10px;
+  display: inline-block;
+}
+
+#songs-sent {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+#in-progress {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+@media(min-width: 800px) {
+  #download-view-container {
+    width: 50%;
+  }
+}
