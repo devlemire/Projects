@@ -7,8 +7,13 @@ angular.module('app')
       scope: {
         price: '='
       },
-      controller: function($scope, stripeSrvc) {
-        
+      controller: function($scope, stripeSrvc, cart, $rootScope) {
+        $scope.charge = function(token, price) {
+          stripeSrvc.charge({token: token, transaction: price}).then(function(r) {
+            var currentCart = cart.getCart();
+            $rootScope.$broadcast('paid', currentCart);
+          });
+        };
       },
       link: function(scope, ele, attr) {
         var handler = StripeCheckout.configure({
@@ -19,7 +24,7 @@ angular.module('app')
             //You can access the token ID with 'token.id'
             //Get the token ID to your server-side code for use
             console.log("SUCCESSFUL TRANSACTION:", {token: token});
-
+            scope.charge(token, scope.price);
           }
         });
 
