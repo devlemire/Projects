@@ -29,6 +29,7 @@ angular.module('app')
         });
 
         $('#checkout-btn').on('click', function(e) {
+          var price = scope.price / 0.01;
           handler.open({
             name: 'Stripe Demo',
             description: 'This is just a demo'
