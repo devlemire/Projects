@@ -1,6 +1,6 @@
 angular
   .module('app')
-  .controller('ctrl', function($scope, mediaLoading, cart) {
+  .controller('ctrl', function($scope, $rootScope, mediaLoading, cart) {
 
     $scope.albums = mediaLoading.getAlbums();
     $scope.songs = mediaLoading.getSongs();
@@ -13,13 +13,5 @@ angular
 
     $scope.getTotal = function() {
       $scope.total = cart.getTotal();
-    };
-
-    $scope.test = function() {
-      console.log($scope.search);
-    };
-
-    $scope.checkout = function() {
-      console.log("CHECKOUT FIRED");
     };
   });
