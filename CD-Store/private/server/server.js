@@ -37,14 +37,17 @@ app.post('/api/email', function(req, res) {
   var email = req.body.email;
   var links = [];
   for(var i in req.body.songs) {
-    links.push(req.body.songs[i].download);
+    links.push({path: req.body.songs[i].download});
   }
+
+  console.log('LINKS', links);
 
   var mailOptions = {
       from: '"MurreyTunes" <richardmurreytunes@gmail.com>', // sender address
       to: email, // list of receivers
       subject: 'Your new music from MurreyTunes', // Subject line
       text: 'Thanks for shopping with us over at MurreyTunes. Check out the file attachments for your new music. Enjoy!',
+      html: '<p>Thanks for shopping with us over at MurreyTunes. Check out the file attachments for your new music. Enjoy!</p>',
       attachments: links
   };
 
@@ -54,6 +57,7 @@ app.post('/api/email', function(req, res) {
         return console.log(error);
       }
       console.log('Message sent: ' + info.response);
+      res.status(200).send();
   });
 });
 

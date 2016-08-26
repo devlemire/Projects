@@ -1,7 +1,7 @@
 angular
   .module('app')
   .controller('paidCtrl', function($scope, $rootScope, $location, emailSrvc) {
-
+    
     $scope.songs = JSON.parse(window.localStorage.getItem('songs'));
     $scope.inProgress = false;
     $scope.emailMatch = true;
