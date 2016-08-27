@@ -3,6 +3,7 @@
 }
 
 #login-content-container {
+  margin-top: 25px;
   height: 280px;
   display: flex;
   justify-content: center;
