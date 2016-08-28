@@ -17,6 +17,10 @@
     flex-direction: column;
   }
 
+  #register-button {
+    background: black;
+  }
+
   #register-content-container button:focus {
     outline: none;
   }
