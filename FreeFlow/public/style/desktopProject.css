@@ -20,6 +20,7 @@
   #project-desktop-description {
     margin-left: 10px;
     margin-top: 5px;
+    width: calc(100% - 20px);
   }
 
   #project-desktop-delete-button {
