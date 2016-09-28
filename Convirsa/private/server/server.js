@@ -9,7 +9,6 @@ app.use(bodyParser.json());
 app.use(express.static('../../public'));
 
 app.get('*', function(req, res) {
-  console.log('hit');
   res.sendFile('index.html', { root: '../../public' });
 })
 
