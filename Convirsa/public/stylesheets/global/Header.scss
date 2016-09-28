@@ -56,9 +56,22 @@
 .global-header-contact-info-container {
   width: 140.22px;
   height: 100%;
-  font-size: 1rem;
+  font-size: 15px;
   font-family: $convirsaFontFamily;
-  font-weight: 400;
+  font-weight: lighter;
   font-style: normal;
   line-height: 1.5;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.global-header-contact-top {
+  display: flex;
+}
+
+.global-header-phone-icon {
+  color: white;
+  margin-right: 10px;
 }

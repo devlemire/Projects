@@ -27136,7 +27136,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Header = __webpack_require__(240);
+	var _Header = __webpack_require__(236);
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
@@ -27148,7 +27148,7 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	__webpack_require__(236);
+	__webpack_require__(237);
 	
 	var Home = function (_React$Component) {
 	  _inherits(Home, _React$Component);
@@ -27179,13 +27179,94 @@
 /* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Header = function (_React$Component) {
+	  _inherits(Header, _React$Component);
+	
+	  function Header() {
+	    _classCallCheck(this, Header);
+	
+	    return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
+	  }
+	
+	  _createClass(Header, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "global-header" },
+	        _react2.default.createElement("img", { className: "global-header-logo", src: "https://www.convirza.com/wp-content/themes/fluid-yeti/assets/img//header-logo.png" }),
+	        _react2.default.createElement("div", { className: "global-header-mobile-menu" }),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "global-header-contact-container" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "global-header-contact-info-container" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "global-header-contact-top" },
+	              _react2.default.createElement(
+	                "p",
+	                { className: "global-header-phone-icon" },
+	                _react2.default.createElement("i", { className: "fa fa-phone" })
+	              ),
+	              _react2.default.createElement(
+	                "p",
+	                null,
+	                " CALL NOW:"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "global-header-contact-bottom" },
+	              _react2.default.createElement(
+	                "p",
+	                { className: "global-header-phone-number" },
+	                "(888) 340-6747"
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Header;
+	}(_react2.default.Component);
+	
+	exports.default = Header;
+
+/***/ },
+/* 237 */
+/***/ function(module, exports, __webpack_require__) {
+
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(237);
+	var content = __webpack_require__(238);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(239)(content, {});
+	var update = __webpack_require__(240)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -27202,21 +27283,21 @@
 	}
 
 /***/ },
-/* 237 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(238)();
+	exports = module.exports = __webpack_require__(239)();
 	// imports
 	
 	
 	// module
-	exports.push([module.id, ".global-header {\n  background: #fff;\n  width: 100%;\n  height: 80px;\n  display: flex;\n  align-items: center;\n  position: fixed;\n  top: 0px; }\n\n.global-header-logo {\n  position: relative;\n  font-weight: 400;\n  color: #d36028;\n  width: 190px;\n  display: block;\n  top: -2px;\n  padding: 0 1.25rem; }\n\n.global-header-mobile-menu {\n  position: absolute;\n  padding-left: 1.25em;\n  right: 0px;\n  height: 34px;\n  line-height: 33px;\n  padding: 0 2.8125rem 0 1.25rem;\n  color: #FFF;\n  top: 24px; }\n  .global-header-mobile-menu:before {\n    content: \"\";\n    position: absolute;\n    display: block;\n    height: 0;\n    top: 50%;\n    margin-top: -8px;\n    right: 1.25rem;\n    box-shadow: 0 0 0 1px #d36028,0 7px 0 1px #d36028,0 14px 0 1px #d36028;\n    width: 16px; }\n\n.global-header-contact-container {\n  height: 58px;\n  width: 200px;\n  background-color: #939699;\n  color: #FFF;\n  position: fixed;\n  top: 80px;\n  right: 0px; }\n\n.global-header-contact-info-container {\n  width: 140.22px;\n  height: 100%;\n  font-size: 1rem;\n  font-family: azo-sans-web, Helvetica, Roboto, Arial, sans-serif;\n  font-weight: 400;\n  font-style: normal;\n  line-height: 1.5; }\n", ""]);
+	exports.push([module.id, ".global-header {\n  background: #fff;\n  width: 100%;\n  height: 80px;\n  display: flex;\n  align-items: center;\n  position: fixed;\n  top: 0px; }\n\n.global-header-logo {\n  position: relative;\n  font-weight: 400;\n  color: #d36028;\n  width: 190px;\n  display: block;\n  top: -2px;\n  padding: 0 1.25rem; }\n\n.global-header-mobile-menu {\n  position: absolute;\n  padding-left: 1.25em;\n  right: 0px;\n  height: 34px;\n  line-height: 33px;\n  padding: 0 2.8125rem 0 1.25rem;\n  color: #FFF;\n  top: 24px; }\n  .global-header-mobile-menu:before {\n    content: \"\";\n    position: absolute;\n    display: block;\n    height: 0;\n    top: 50%;\n    margin-top: -8px;\n    right: 1.25rem;\n    box-shadow: 0 0 0 1px #d36028,0 7px 0 1px #d36028,0 14px 0 1px #d36028;\n    width: 16px; }\n\n.global-header-contact-container {\n  height: 58px;\n  width: 200px;\n  background-color: #939699;\n  color: #FFF;\n  position: fixed;\n  top: 80px;\n  right: 0px; }\n\n.global-header-contact-info-container {\n  width: 140.22px;\n  height: 100%;\n  font-size: 15px;\n  font-family: azo-sans-web, Helvetica, Roboto, Arial, sans-serif;\n  font-weight: lighter;\n  font-style: normal;\n  line-height: 1.5;\n  display: flex;\n  align-items: flex-end;\n  justify-content: center;\n  flex-direction: column; }\n\n.global-header-contact-top {\n  display: flex; }\n\n.global-header-phone-icon {\n  color: white;\n  margin-right: 10px; }\n", ""]);
 	
 	// exports
 
 
 /***/ },
-/* 238 */
+/* 239 */
 /***/ function(module, exports) {
 
 	/*
@@ -27272,7 +27353,7 @@
 
 
 /***/ },
-/* 239 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -27522,70 +27603,6 @@
 			URL.revokeObjectURL(oldSrc);
 	}
 
-
-/***/ },
-/* 240 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var Header = function (_React$Component) {
-	  _inherits(Header, _React$Component);
-	
-	  function Header() {
-	    _classCallCheck(this, Header);
-	
-	    return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
-	  }
-	
-	  _createClass(Header, [{
-	    key: "render",
-	    value: function render() {
-	      return _react2.default.createElement(
-	        "div",
-	        { className: "global-header" },
-	        _react2.default.createElement("img", { className: "global-header-logo", src: "https://www.convirza.com/wp-content/themes/fluid-yeti/assets/img//header-logo.png" }),
-	        _react2.default.createElement("div", { className: "global-header-mobile-menu" }),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "global-header-contact-container" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "global-header-contact-info-container" },
-	            _react2.default.createElement("i", { "class": "fa fa-phone", "aria-hidden": "true" }),
-	            _react2.default.createElement(
-	              "p",
-	              null,
-	              "CALL NOW:"
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return Header;
-	}(_react2.default.Component);
-	
-	exports.default = Header;
 
 /***/ }
 /******/ ]);
